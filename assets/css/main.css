@@ -332,6 +332,10 @@ template {
     font-weight: bold;
 }
 
+.heading {
+    color: #50A6C2;
+}
+
 .achievements {
     margin-top: 3em;
 }
