@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata of the Webpage -->
+    <!-- Character-set Metadata -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Viewport Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Description Metadata-->
+    <meta name="description" content="Portfolio Website" />
+    <!-- Author Metadata -->
+    <meta name="author" content="Anshu Singh" />
+    <!-- Keyword Metadata -->
+    <meta name="keywords" content="Anshu Singh" />
+    <!-- Webpage Logo -->
+    <!-- <link rel="shortcut icon" href="./assets/img/favicon.ico" /> -->
+    <!-- Webpage Title -->
+    <title>Anshu Singh</title>
+
+    <!-- Import CSS: Main Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <div>
+        <div>
+            <div>
+            </div>
+
+            <!-- <div class="header-icons">
+          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/avs1508/">
+            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a aria-label="My Github Profile" target="_blank" href="https://github.com/AVS1508">
+            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+          <a aria-label="My Résumé" target="_blank" href="https://www.adityavsingh.com/resume.html">
+            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+          </a> -->
+            <!-- <a aria-label="Send Email" href="mailto:avsingh@umass.edu" target="_blank"
+            ><i class="icon fa fa-envelope"></i
+          ></a>
+        </div>
+        <div class="header-links">
+          <a class="link" href="#about" data-scroll>About Me</a>
+          <a class="link" href="#projects" data-scroll>Projects</a>
+        </div> -->
+        </div>
+        <!-- <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a> -->
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="heading">Why should you care about facial privacy?</h1>
+        <div style="margin-bottom: 1em; color: #39B7CD">Apr 21, 2021</div>
+
+
+        <div class="para">In multiple research domains, a human face is a well-studied object from visual content since
+            it is a
+            source of rich information, most notably the identity of an individual. Identity revelation from visual data
+            can make one vulnerable to leakage of personal and sensitive information (e.g., sexual orientation [1],
+            health condition [2], religious beliefs [3]), mental and social harassment [4], and much more.</div>
+
+        <div class="para">Even police enforcements use technologies like Facial Recognition for their purposes — however
+            they want,
+            whenever they want, and we do not even know what dataset it is trained on or what accuracy their system has.
+            The alarming ProPublica article [5] talks about software that purports to predict someone’s chances of
+            committing a crime again. The software predicted black people with higher risk. According to the article,
+            even though a black lady didn’t commit a crime again, her risk factor was high.</div>
+
+        <div class="para">Then there are reverse search engines like ClearViewAI [6]. What’s ClearViewAI? ClearView AI
+            is an
+            application where one can upload an image of a person, and the application can fetch all the publicly
+            available images of that person. It can even return the links to those public images.</div>
+
+        <div class="para">Now, in today’s state-of-the-art human-centric computer vision applications, the availability
+            of large
+            datasets play a key role, ranging from face recognition, human-object interaction, gaze estimation to 3D
+            human construction from images. For this purpose, datasets are compiled on a large scale — containing
+            people’s faces — are (can be) passively collected in ways likely to perpetuate severe privacy violations.
+            For instance, tapping surveillance camera and drone footage in public spaces, web-scraping images from
+            social media and so on. Such sources masquerade as a solution to “in the wild’’ people’s data and can
+            disrupt people’s privacy.</div>
+
+        <div class="para">In a pool of datasets, let me list out two such datasets:
+            <ol>
+                <li>Stanford’s Brainwash Dataset, consisting of live cam images taken from San Francisco’s Brainwash
+                    Cafe, includes 11,917 images of “everyday life of a busy downtown cafe”. It was put down from the
+                    internet because of privacy concerns. But given that the dataset was already so well distributed, it
+                    is still being used worldwide.</li>
+                <li>Recently PANDA Dataset [7] was released that contains videos of people in several public places. The
+                    authors used highly sophisticated videography to capture the videos for the dataset. This high
+                    spatial resolution dataset empowers visual analytics but has privacy risks.</li>
+            </ol>
+        </div>
+
+        <div class="para">Data trading and data pooling can augment the privacy breach, which can be used for unstated
+            purposes.
+            Moreover, outsourcing machine learning tasks to the provider of Machine Learning as a Service [8,9,10] can
+            make models and data on which they were trained vulnerable to attackers. Even a trained model can leak
+            information (e.g., demographics) about a dataset — membership inference attack [11], model inversion attack
+            [12], and training data extraction attack [13].</div>
+
+        <div class="para">These concerns make it crucial to address people’s privacy in visual training data before
+            releasing them to
+            the public or unreliable third party. Governments in countries have started taking steps towards this. Under
+            General Data Protection Regulation (GDPR), the European Union, the organizations have to ensure that
+            personal data is gathered legally and protect it from exploitation and misuse.</div>
+
+        <div class="para">Moreover, researchers have raised concerns over the lack of geodiversity (e.g amerocentric
+            bias),
+            under-representation of groups (dominance of caucassians), and offensive labeling in influential and
+            powerful image datasets like ImageNet and CelebA.</div>
+
+        <div class="para">A dataset must be well-represented since it reflects real-life and can have real consequences.
+
+        </div>
+
+        <div class="para">One of the fundamental problems of machine learning systems is — people design algorithms and
+            embed their
+            unconscious biases in algorithms. It’s seldom deliberate — this doesn’t mean that we should let the problem
+            off the hook. As a step forward, as some researchers advocate, it means that looking beyond the accuracy of
+            a machine learning model and understanding a model’s behavior at the subgroup level. For instance, for
+            emotion prediction evaluating a model does not output negative emotions for dark-skinned people. Also,
+            looking out for false positives and false negatives in a model can further help understand the model design,
+            thereby preventing bias issues.
+
+        </div>
+
+        <div class="para">Today, artificial intelligence systems have started becoming better at their tasks; it is high
+            time to
+            consider privacy protection and tackling discriminative behavior during computer vision tasks.
+        </div>
+
+        <h3>References</h3>
+        <div>
+            <ol>
+                <li>Rule, N. O., Ambady, N., & Hallett, K. C. (2009). Female sexual orientation is perceived accurately,
+                    rapidly, and automatically from the face and its features. Journal of Experimental Social
+                    Psychology, 45(6), 1245–1251.</li>
+                <li>Hossain, M. S., & Muhammad, G. (2015). Cloud-assisted speech and face recognition framework for
+                    health monitoring. Mobile Networks and Applications, 20(3), 391–399.</li>
+                <li>Rule, N. O., Garrett, J. V., & Ambady, N. (2010). On the perception of religious group membership
+                    from faces. PloS one, 5(12), e14241.
+                </li>
+                <li>DeHart, J., Stell, M., & Grant, C. (2020). Social media and the scourge of visual privacy.
+                    Information, 11(2), 57.’
+                </li>
+                <li>https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
+                </li>
+                <li>https://clearview.ai/
+                </li>
+                <li>Wang, X., Zhang, X., Zhu, Y., Guo, Y., Yuan, X., Xiang, L., … & Fang, L. (2020). Panda: A
+                    gigapixel-level human-centric video dataset. In Proceedings of the IEEE/CVF conference on computer
+                    vision and pattern recognition (pp. 3268–3278).
+                </li>
+                <li>https://aws.amazon.com/sagemaker
+                </li>
+                <li>https://cloud.google.com/ai-platform
+                </li>
+                <li>https://azure.microsoft.com/en-us/services/machine-learning
+                </li>
+                <li>Shokri, R., Stronati, M., Song, C., & Shmatikov, V. (2017, May). Membership inference attacks
+                    against machine learning models. In 2017 IEEE Symposium on Security and Privacy (SP) (pp. 3–18).
+                    IEEE.
+                </li>
+                <li>Fredrikson, M., Jha, S., & Ristenpart, T. (2015, October). Model inversion attacks that exploit
+                    confidence information and basic countermeasures. In Proceedings of the 22nd ACM SIGSAC Conference
+                    on Computer and Communications Security (pp. 1322–1333).
+                </li>
+                <li>Carlini, N., Liu, C., Erlingsson, Ú., Kos, J., & Song, D. (2019). The secret sharer: Evaluating and
+                    testing unintended memorization in neural networks. In 28th {USENIX} Security Symposium ({USENIX}
+                    Security 19) (pp. 267–284).
+                </li>
+                <li>Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., & Galstyan, A. (2019). A survey on bias and
+                    fairness in machine learning. arXiv preprint arXiv:1908.09635.
+                </li>
+            </ol>
+        </div>
+
+    </section>
+
+    <!-- <footer class="footer">
+      <p>&copy; Aditya Vikram Singh, 2020</p>
+    </footer> -->
+
+    <!-- Import JS: Sweet Scroll -->
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <!-- Import JS: Google Analytics -->
+    <script src="./assets/js/google-analytics.js"></script>
+    <!-- Import JS: Main Script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
