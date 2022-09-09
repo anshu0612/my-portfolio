@@ -116,8 +116,8 @@ img {
 }
 
 .me {
-    border-style: groove;
-    width: 12em;
+    width: 14em;
+    height: 13.2em;
     border-radius: 50%;
 }
 
@@ -297,6 +297,12 @@ template {
     src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
     font-weight: 400;
     font-style: normal
+}
+
+
+.profile-div {
+    text-align: center;
+    margin: 2em;
 }
 
 .fa {
