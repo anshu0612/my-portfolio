@@ -5,6 +5,7 @@
 
 html {
     line-height: 1.15;
+    margin-bottom: 8em;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -57,6 +58,8 @@ samp {
 
 a {
     background-color: transparent;
+    text-decoration: none !important;
+    color: #2A8E82;
     -webkit-text-decoration-skip: objects
 }
 
@@ -303,6 +306,34 @@ template {
 .profile-div {
     text-align: center;
     margin: 2em;
+}
+
+.social-div {
+    display: flex;
+    justify-content: center;
+}
+
+.social-img {
+    width: 2em;
+    height: 2em;
+    margin: 2em 0.2em;
+}
+
+.info {
+    margin: 1em 0;
+}
+
+.sub-heading {
+    color:#39B7CD;
+}
+
+.name {
+    color:#50A6C2;
+    font-weight: bold;
+}
+
+.achievements {
+    margin-top: 3em;
 }
 
 .fa {
