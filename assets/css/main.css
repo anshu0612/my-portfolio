@@ -344,6 +344,11 @@ template {
     margin-top: 3em;
 }
 
+.blog-image-div {
+    display: flex;
+    justify-content: center;
+}
+
 .fa {
     display: inline-block;
     font: 14px/1 FontAwesome;
