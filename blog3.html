@@ -30,10 +30,84 @@
         </h1>
         <div style="margin-bottom: 1em; color: #39B7CD">Sep 10, 2022</div>
 
-        <div class="para"></div>
+        <div class="para">
+            <h3>Differential Privacy</h3>
+            <div>Differential privacy (DP) is an increasingly popular tool for preserving individuals’ privacy by adding
+                statistical uncertainty when sharing sensitive data. DP has practical challenges that include the need
+                for iterative exploration and negotiation with data custodians and analysts on the choice of privacy
+                parameters, DP variants, and data statistics.
+            </div>
+            <div class="para">
+                Furthermore, there is tension between data minimization and differential privacy: differential privacy
+                gives nearly accurate results on large datasets, however, collecting a large amount of data can infringe
+                the privacy of individuals and transgress regulations.
+            </div>
+            <div class="para">
+                <a href="https://digifesto.com/2021/10/08/towards-a-synthesis-of-differential-privacy-and-contextual-integrity/"
+                    target="blank">Contextual Integrity (CI)</a>, is another aspect that was introduced, to help with
+                these decisional choices
+                on applying DP. CI captures socially nuanced requirements of privacy. To capture such nuances, it comes
+                with a template for understanding information norms, parameterized in terms of the sender, receiver,
+                data subject of the personal information, sensitive attributes of the data subject, and transmission
+                principle (the normative rule governing the conditions under which this parameterized information flow
+                is (in)appropriate).
+            </div>
+            <div class="para">
+                Furthermore, a large number of DP libraries have been developed and open-sourced with the primary goal
+                of assisting non-experts in applying DP. However, there is a dearth of libraries focusing on
+                scalability. The two libraries introduced – <a href="https://gitlab.com/tumult-labs/core"
+                    target="blank">Tumult’s
+                    Analytics/Core by Tumult Labs</a>, and <a href="https://pipelinedp.io/"
+                    target="blank">PipelineDP</a> by
+                Google and OpenMinded – address this problem. The former is built on the <a
+                    href="https://projects.iq.harvard.edu/files/opendp/files/opendp_programming_framework_11may2020_1_01.pdf"
+                    target="blank">framework of the OpenDP library</a>
+                by the Harvard Privacy Team and uses Apache Spark for scalability. The latter library employs Apache
+                Spark and Apache Beam to process massive datasets.
+            </div>
+        </div>
 
-        <h3>Upcoming  :)</h3>
-        <!-- <div>
+        <div>
+            <h3>Gender Privacy</h3>
+            <div>
+                Applications asking for users’ gender predominantly follow the norm of giving binary options.
+                Technologists must recognize the complexity and dynamic nature of gender, as well as the disclosure
+                concerns, and must be purpose limited (do you really need to collect gender?). These realizations can
+                contribute to technological advancements that respect diverse social groups. Furthermore, the usage of
+                gendered honorifics, salutations, and titles is an implicit manner of collecting gender (credit: an
+                attendee sharing). This further underscores considering the cultural aspects of gender collection.
+            </div>
+        </div>
+
+        <div>
+            <h3>Privacy in AI Chatbots</h3>
+            <div>
+                The disconcerting empirical findings revealed that chatbot users can reveal highly sensitive information
+                such as political opinions, sexual orientations, religious beliefs, and health data. Some promising
+                solutions for developers were presented to address the potential privacy harm to users. These included
+                identifying mental health and vulnerable populations, adjusting the interaction mode or interventions,
+                safeguarding inadvertent sharing of sensitive information, and avoiding manipulative/dark patterns.
+            </div>
+            <div class="para">
+                <div class="quote">
+                    These excerpts from the <a href="https://www.cleverbot.com/" target="blank">Cleverbot's</a> privacy
+                    policy give me
+                    chills (credit: an attendee sharing)
+                    -<br>
+                    <i>“It also means that content is by default not deleted from our servers - ever - and may still be
+                        accessible after your account is deleted.”</i> <br>
+                    <i>"by sending input to Cleverbot you agree that we may process data for or about you"</i>
+                </div>
+            </div>
+
+            <!-- <div>
+                <h3>Differential Privacy</h3>
+                <div></div>
+                <div class="para"></div>
+                <div class="para"></div>
+            </div> -->
+
+            <!-- <div>
             <ol>
                 <li></li>
             </ol>

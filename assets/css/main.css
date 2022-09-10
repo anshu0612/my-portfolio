@@ -117,6 +117,12 @@ audio:not([controls]) {
     height: 0
 }
 
+.quote {
+    margin: 1em;
+    border-left: 3px solid #73B1B7;
+    padding: 0.8em;
+    background-color: #f2f3f4	;
+}
 
 img {
     border-style: none
