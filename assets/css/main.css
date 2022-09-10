@@ -48,6 +48,10 @@ hr {
     overflow: visible
 }
 
+.bold-anchor {
+    font-weight: 900;
+}
+
 code,
 kbd,
 pre,
