@@ -352,6 +352,12 @@ template {
     margin: 1em 0;
 }
 
+.para-pepr {
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+
 .heading {
     color: #50A6C2;
 }

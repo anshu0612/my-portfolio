@@ -28,14 +28,17 @@
     <section id="about">
         <h1 class="heading">2022 USENIX Conference on Privacy Engineering Practice and Respect Key Takeways.
         </h1>
-        <div style="margin-bottom: 1em; color: #39B7CD">by Data Privacy Protection Capability Center (DPPCC) from GovTech</div>
+        <div style="margin-bottom: 1em; color: #39B7CD">by Data Privacy Protection Capability Center (DPPCC) from
+            GovTech</div>
         <div style="margin-bottom: 1em; color: #39B7CD">Sep 11, 2022</div>
 
-        <div class="para">
-            The 2022 USENIX Conference on Privacy Engineering Practice and Respect (PEPR '22) focuses on designing and
-            building products and systems that respect their users' privacy and the societies in which they operate.
-
-            <div class="para">
+        <div>
+            <div class="para-pepr">
+                The 2022 USENIX Conference on Privacy Engineering Practice and Respect (PEPR '22) focuses on designing
+                and
+                building products and systems that respect their users' privacy and the societies in which they operate.
+            </div>
+            <div class="para-pepr">
                 The conference was well-organized and was attended by a large number of privacy and security pundits.
                 Some of the privacy topics that were covered included differential privacy, privacy threat modeling,
                 consent management, effective privacy labelling and standardization, privacy incident management,
@@ -43,16 +46,16 @@
                 groups (e.g., children and non-binary gender), privacy by design and so on.
             </div>
 
-            <div class="para">Here are my key takeaways from the conference.
+            <div class="para-pepr">Here are my key takeaways from the conference.
             </div>
 
         </div>
 
-        <div class="para">
+        <div>
             <h2>Differential Privacy</h2>
             <div>
                 <h3>In Practice</h3>
-                <div class="para">Differential privacy (DP) is an increasingly popular tool for preserving individuals’
+                <div class="para-pepr">Differential privacy (DP) is an increasingly popular tool for preserving individuals’
                     privacy by
                     adding
                     statistical uncertainty when sharing sensitive data. However, DP has practical challenges that
@@ -64,13 +67,13 @@
                     Laplacian mechanisms), and data statistics (e.g., mean, variance and sum).
                 </div>
             </div>
-            <div class="para">
+            <div class="para-pepr">
                 Further, there is tension between data minimization (limiting data collection) and differential privacy:
                 differential privacy
                 gives nearly accurate results on large datasets, however, collecting a large amount of data can infringe
                 the privacy of individuals and transgress regulations.
             </div>
-            <div class="para">
+            <div class="para-pepr">
                 <h3>Contextual Integrity</h3>
                 <a href="https://digifesto.com/2021/10/08/towards-a-synthesis-of-differential-privacy-and-contextual-integrity/"
                     target="blank">Contextual Integrity (CI)</a>, is another aspect that was introduced, to help with
@@ -82,7 +85,7 @@
                 principle (the normative rule governing the conditions under which this parameterized information flow
                 is (in)appropriate).
             </div>
-            <div class="para">
+            <div class="para-pepr">
                 <h3>Libraries</h3>
                 A large number of DP libraries have been developed and open-sourced with the primary goal
                 of assisting non-experts in applying DP. However, there is a dearth of libraries focusing on
@@ -100,7 +103,7 @@
 
         <div>
             <h2>Gender Privacy</h2>
-            <div>
+            <div class="para-pepr">
                 Applications asking for users’ gender predominantly follow the norm of giving binary options.
                 Technologists must recognize the complexity and dynamic nature of gender, as well as the disclosure
                 concerns, and must be purpose limited (do you really need to collect gender?). These realizations can
@@ -112,7 +115,7 @@
 
         <div>
             <h2>Privacy in AI Chatbots</h2>
-            <div>
+            <div class="para-pepr">
                 The disconcerting empirical findings revealed that chatbot users can share highly sensitive information
                 such as political opinions, sexual orientations, religious beliefs, and health data. Some promising
                 solutions for developers were presented to address the potential privacy harm to users. These included
@@ -120,7 +123,7 @@
                 safeguarding inadvertent sharing of sensitive information, and avoiding manipulative/dark patterns --
                 design techniques that nudge users to less privacy-protective options.
             </div>
-            <div class="para">
+            <div class="para-pepr">
                 <div class="quote">
                     These excerpts from the <a href="https://www.cleverbot.com/" target="blank">Cleverbot's</a> privacy
                     policy give me
@@ -132,18 +135,18 @@
                 </div>
             </div>
 
-            <div class="para">
+            <div>
                 <h2>Browser Privacy</h2>
-                <div class="para">
+                <div>
                     <h3>DNS Privacy</h3>
-                    <div class="para">
+                    <div class="para-pepr">
                         Domain Name System (DNS) is the Internet's directory that resolves domain names. Anyone on the
                         network path between
                         one's device and the DNS resolver can see both the query containing the desired hostname (or
                         website) and the IP address identifying one's device. This browsing data has been monetized (for
                         example, by ISPs) for purposes such as ad targeting.
                     </div>
-                    <div class="para">
+                    <div class="para-pepr">
                         DNS over TLS (DoT) and DNS over HTTPS (DoH) are often used to encrypt DNS queries to prevent
                         visibility during transmission. The key distinction between the two is the port used. DoT
                         exclusively uses port 853, whereas DoH uses port 443, which is also used by all other HTTPS
@@ -151,23 +154,23 @@
                         traffic, giving network administrators less visibility while providing users with more privacy,
                         whereas with DoT network administrators can monitor the data.
                     </div>
-                    <div class="para">The two techniques have two major drawbacks: centralized DNS presents single
+                    <div class="para-pepr">The two techniques have two major drawbacks: centralized DNS presents single
                         points of failure, and the resolver may still link all queries to client IP addresses. Oblivious
                         DNS over HTTPS (ODoH) solves these issues by adding a layer of public key encryption as well as
                         a
                         network proxy between clients and DoH servers. The combination of these two added elements
                         guarantees that only the user has access to both the DNS messages and their own IP address at
                         the same time.</div>
-                    <div class="para">
+                    <div class="para-pepr">
                         It's important to acknowledge that DNS privacy, through these protocols, can negatively impact
                         the public interest
                         such as abuse detection, nefarious content censorship, internet shutdowns, accessibility by
                         third parties or user agents and so on. </div>
 
                 </div>
-                <div class="para">
+                <div>
                     <h3>Content Blocking (a.k.a adblocking or tracker blocking)</h3>
-                    <div class="para">
+                    <div class="para-pepr">
                         37% of the web uses ad blockers who values choice and control over their browsing experience.
                         The usage of community-maintained pre-defined filter lists (collection of rules that describe
                         what things to block on which websites, e.g., EasyList and EasyPrivacy) can become obsolete
@@ -183,41 +186,39 @@
                 </div>
             </div>
 
-            <div class="para">
+            <div>
                 <h2>Smart Home Privacy</h2>
-                <div class="para">
+                <div>
                     <h3>IoT Inspector</h3>
-                    <div class="para">
-                        <div class="para">
-                            Smart home devices (internet-connected consumer devices) have conventional challenges
-                            including
-                            privacy (e.g, sensitive information transmission to third parties), security (e.g,
-                            distributed
-                            denial of service attacks ) and device inventory and management (e.g, determining what
-                            devices
-                            are connected to a network).</div>
-                        <div class="para">
-                            To address these challenges, IoT Inspector, an open-source IoT traffic monitoring tool (via
-                            ARP
-                            spoofing) for smart homes was introduced. It helps smart home users visualize network
-                            activities
-                            of smart home devices. Also, the large -scale crowdsourced smart home network traffic data
-                            and
-                            device labels from 63,000+ devices across 6400+ users with IoT Inspector can enable smart
-                            home
-                            data-driver research.</div>
-                    </div>
+                    <div class="para-pepr">
+                        Smart home devices (internet-connected consumer devices) have conventional challenges
+                        including
+                        privacy (e.g, sensitive information transmission to third parties), security (e.g,
+                        distributed
+                        denial of service attacks ) and device inventory and management (e.g, determining what
+                        devices
+                        are connected to a network).</div>
+                    <div class="para-pepr">
+                        To address these challenges, IoT Inspector, an open-source IoT traffic monitoring tool (via
+                        ARP
+                        spoofing) for smart homes was introduced. It helps smart home users visualize network
+                        activities
+                        of smart home devices. Also, the large -scale crowdsourced smart home network traffic data
+                        and
+                        device labels from 63,000+ devices across 6400+ users with IoT Inspector can enable smart
+                        home
+                        data-driver research.</div>
                 </div>
-                <div class="para">
+                <div>
                     <h3>Bystanders' Privacy</h3>
-                    <div class="para">
-                        <div class="para">
+                    <div>
+                        <div class="para-pepr">
                             Smart home users are defined as those who own smart home devices in their home and smart
                             home
                             bystanders as those who do not own smart home devices but may be subject to the data
                             collection
                             by smart home devices.</div>
-                        <div class="para">
+                        <div class="para-pepr">
                             How to deliver the privacy-related notifications to users and bystanders and increase their
                             awareness of data practices. To address this problem four <a
                                 href="https://dl.acm.org/doi/10.1145/3491102.3502137" target="blank">privacy awareness
@@ -239,9 +240,9 @@
                 </div>
             </div>
 
-            <div class="para">
+            <div>
                 <h2>Privacy Testbed</h2>
-                <div class="para">
+                <div class="para-pepr">
                     Privacy is simply too complicated to be left in the hands of average consumer (including
                     developers). A remedy is to regulate the infrastructure that collects, stores, and transfers data.
                     The proposed privacy testbed can analyze and understand the privacy behavior of client server
@@ -255,17 +256,17 @@
                 </div>
             </div>
 
-            <!-- <div class="para">
+            <!-- <div class="para-pepr">
                 <h2>Standardization</h2>
-                <div class="para">
+                <div class="para-pepr">
                 </div>
             </div> -->
 
             <div>
                 <h2>Privacy By Design</h2>
-                <div>Privacy by design states that privacy (including security) should be proactively incorporated into
+                <div class="para-pepr">Privacy by design states that privacy (including security) should be proactively incorporated into
                     the software development lifecycle as opposed to being considered an afterthought.</div>
-                <div class="para">Successful incorporation of privacy by design can happen when developers consider
+                <div class="para-pepr">Successful incorporation of privacy by design can happen when developers consider
                     privacy as a feature rather than a bottleneck and raise questions - “Wait! This doesn’t seem right!
                     We need to discuss with the team.”. Another moralistic point of view
                     to take
@@ -273,18 +274,18 @@
                     with to incentivize the developers), organizations should instead focus on the human value,
                     acknowledging that behind every piece of data is a human.
                 </div>
-                <div class="para">
+                <div class="para-pepr">
                     Some of the aspects of privacy by design covered in the talks are as below:
                 </div>
-                <div class="para">
+                <div>
                     <h3>Right to Erasure/Export Request</h3>
-                    <div class="para">
-                        <div class="para">
+                    <div>
+                        <div class="para-pepr">
                             Users have the "right to know" (export request) about the personal information a business
                             collects about them and the "right to delete" (erasure request) the personal information
                             gathered from them, under the California Consumer Privacy Act of 2018.</div>
 
-                        <div class="para">
+                        <div class="para-pepr">
                             The team at Lyft presented a strategically designed federated architecture to handle
                             orchestrated data erasure and export requests honoring users’ rights. This thoughtful
                             system
@@ -296,15 +297,15 @@
 
                     </div>
                 </div>
-                <div class="para">
+                <div>
                     <h3>Personal Data Annotation
                     </h3>
-                    <div class="para">
-                        <div class="para">Personal data entering an organization can spread like wildfire throughout
+                    <div>
+                        <div class="para-pepr">Personal data entering an organization can spread like wildfire throughout
                             datasets and storage systems, rendering data lineage untraceable and potentially exposing an
                             organization to privacy and security breaches. Therefore it’s paramount to annotate the data
                             and help developers realize the sensitivity level of the data they are handling. </div>
-                        <div class="para">The Twitter team came up with highly granular 504 labels for automated
+                        <div class="para-pepr">The Twitter team came up with highly granular 504 labels for automated
                             annotation of the columns of a dataset. Automation through machine learning supported the
                             quality and velocity of data annotation. This approach also helped in data discovery
                             (optimizing storage and discovering usage patterns) and data auditing and handling
@@ -312,17 +313,17 @@
                             measures). </div>
                     </div>
                 </div>
-                <div class="para">
+                <div>
                     <h3>Product Deprecation</h3>
-                    <div class="para">
-                        <div class="para">Users expect the data to be deleted after a product or feature(s) is
+                    <div>
+                        <div class="para-pepr">Users expect the data to be deleted after a product or feature(s) is
                             deprecated. And , organizations have a tendency to keep a product’s dead/unused data and
                             code forever.
                             Meta team addressed safe, rigorous, and automated deletion of data and code, leading to
                             privacy win – data retention policy violation risk mitigation and supportng the privacy team
                             by reducing the surface area of attack.
                         </div>
-                        <div class="para">They presented two approachs for automated, multi-language, and scalable data
+                        <div class="para-pepr">They presented two approachs for automated, multi-language, and scalable data
                             and code deletion that combines the static usage measurements (code querying the data),
                             runtime usage (traffic in production), and code-specific knowledge (including the business
                             perspective). Also, the code dependency across multiple languages is indexed using <a
@@ -334,10 +335,10 @@
                             engineers but also in building trust. </div>
                     </div>
                 </div>
-                <div class="para">
+                <div>
                     <h3>Privacy Labels</h3>
-                    <div class="para">
-                        <div class="para">The onus is on the organizations to manage the security and privacy risk on
+                    <div>
+                        <div class="para-pepr">The onus is on the organizations to manage the security and privacy risk on
                             behalf of their application users who come with a spectrum of technical knowledge. It is
                             crucial to help the users in informed privacy decision-making with effective privacy labels
                             in an application. These effective labels, supported by an interdisciplinary field, include
@@ -345,11 +346,11 @@
                             bias, and personalizing expertise and preference. </div>
                     </div>
                 </div>
-                <div class="para">
+                <div>
                     <h3>Consent</h3>
-                    <div class="para">
-                        <h4>Cookie</h4>
-                        <div class="para">
+                    <div>
+                        <h4 style="font-size: 1.2em">Cookie</h4>
+                        <div class="para-pepr">
                             One of the biggest technological assumptions is that users understand the browser cookies,
                             let alone make an informed cookie consent decision and realize the privacy harms. Moreover,
                             cookie
@@ -359,7 +360,7 @@
                             users can
                             be ignorant.
                         </div>
-                        <div class="para">
+                        <div class="para-pepr">
                             A standardization of best practices for cookie consent interfaces is required, including
                             (<a href="https://dl.acm.org/doi/10.1145/3491102.3501985" target="blank">based on user
                                 research</a>) simplifying rejecting all cookies and listing cookie categories in
@@ -369,8 +370,8 @@
                             consent and lessen the burden on users.
                         </div>
 
-                        <h4>Ethical Verbal Consent for Voice Assistants</h4>
-                        <div>
+                        <h4 style="font-size: 1.2em">Ethical Verbal Consent for Voice Assistants</h4>
+                        <div class="para-pepr">
                             Typically, voice assistants come with a companion app that collects user consent.
                             Alternatively, having verbal-forward consent can organically integrate into conversation,
                             although this strategy has drawbacks. This includes a lack of information (key details may
@@ -386,9 +387,9 @@
             </div>
 
 
-            <div class="para">
+            <div>
                 <h2>What's next?</h2>
-                <div class="para">
+                <div class="para-pepr">
                     This year's conference covered a wide range of privacy topics. Following that, PEPR'23 can focus on
                     practical difficulties and discoveries in various other Privacy Enhancing Technologies (differential
                     privacy was a hot topic this year), such as homomorphic encryption, federated analytics, secure
