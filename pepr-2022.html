@@ -35,6 +35,16 @@
             The 2022 USENIX Conference on Privacy Engineering Practice and Respect (PEPR '22) focuses on designing and
             building products and systems that respect their users' privacy and the societies in which they operate.
 
+            <div class="para">
+                The conference was well-organized and was attended by a large number of privacy and security pundits.
+                Some of the privacy topics that were covered included differential privacy, privacy threat modeling,
+                consent management, effective privacy labelling and standardisation, privacy incident management,
+                privacy in different areas (e.g., smart home devices, browsers, AI chatbots), privacy for vulnerable
+                groups (e.g., children and non-binary gender), privacy by design and so on.
+            </div>
+
+            <div class="para">Here are my key takeaways from the conference.
+            </div>
 
         </div>
 
@@ -119,20 +129,46 @@
 
             <div class="para">
                 <h2>Browser Privacy</h2>
-                <!-- <div class="para">
-                    <h3>DNS Blocking</h3>
-                    <div class="para"></div>
-                </div> -->
+                <div class="para">
+                    <h3>DNS Privacy</h3>
+                    <div class="para">
+                        Domain Name System (DNS) is the Internet's directory that resolves domain names. Anyone on the
+                        network path between
+                        one's device and the DNS resolver can see both the query containing the desired hostname (or
+                        website) and the IP address identifying one's device. This browsing data has been monetized (for
+                        example, by ISPs) for purposes such as ad targeting.
+                    </div>
+                    <div class="para">
+                        DNS over TLS (DoT) and DNS over HTTPS (DoH) are often used to encrypt DNS queries to prevent
+                        visibility during transmission. The key distinction between the two is the port used. DoT
+                        exclusively uses port 853, whereas DoH uses port 443, which is also used by all other HTTPS
+                        traffic. DoH is better than DoT in terms of privacy: DoH queries are hidden in regular HTTPS
+                        traffic, giving network administrators less visibility while providing users with more privacy,
+                        whereas with DoT network administrators can monitor the data.
+                    </div>
+                    <div class="para">The two techniques have two major drawbacks: centralized DNS presents single
+                        points of failure, and the resolver may still link all queries to client IP addresses. Oblivious
+                        DNS over HTTPS (ODoH) solves these issues by adding a layer of public key encryption as well as
+                        a
+                        network proxy between clients and DoH servers. The combination of these two added elements
+                        guarantees that only the user has access to both the DNS messages and their own IP address at
+                        the same time.</div>
+                    <div class="para">
+                        It's important to acknowledge that DNS privacy, through these protocols, can negatively impact
+                        the public interest
+                        such as abuse detection, nefarious content censorship, internet shutdowns, accessibility by
+                        third parties or user agents and so on. </div>
+
+                </div>
                 <div class="para">
                     <h3>Content Blocking (a.k.a adblocking or tracker blocking)</h3>
                     <div class="para">
                         37% of the web uses ad blockers who values choice and control over their browsing experience.
                         The usage of community-maintained pre-defined filter lists (collection of rules that describe
-                        what things to block on which websites, e.g., EasyList and EasyPrivacy) can result in
-                        functionality breaking across the web and can become obsolete. An innovative technique of
+                        what things to block on which websites, e.g., EasyList and EasyPrivacy) can become obsolete
+                        and result in functionality breakage across the web. An alternative technique of
                         "sugarcoating", on the other hand, replaces the original tracking script with a
-                        privacy-preserving
-                        one.
+                        privacy-preserving one that mitigates the aforementioned problems.
 
                         <div class="quote">
                             SugarCoat: Programmatically generating privacy-preserving, web-compatible resource
@@ -284,7 +320,8 @@
                         <div class="para">They presented two approachs for automated, multi-language, and scalable data
                             and code deletion that combines the static usage measurements (code querying the data),
                             runtime usage (traffic in production), and code-specific knowledge (including the business
-                            perspective). Also, the code dependency across multiple languages is indexed using Glean,
+                            perspective). Also, the code dependency across multiple languages is indexed using <a
+                                href="https://glean.software/" target="blank">Glean</a>,
                             which
                             present static analysis of information in a readily accessible format. They also built a
                             workflow management tool to help engineers deprecate a product or feature safely,
