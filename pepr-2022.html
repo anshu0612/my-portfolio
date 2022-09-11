@@ -28,32 +28,48 @@
     <section id="about">
         <h1 class="heading">2022 USENIX Conference on Privacy Engineering Practice and Respect Key Takeways.
         </h1>
-        <div style="margin-bottom: 1em; color: #39B7CD">Sep 10, 2022</div>
+        <!-- <div style="margin-bottom: 1em; color: #39B7CD">by Data Privacy Protection Capability Center (DPPCC) from GovTech</div> -->
+        <div style="margin-bottom: 1em; color: #39B7CD">Sep 12, 2022</div>
 
         <div class="para">
-            <h3>Differential Privacy</h3>
-            <div>Differential privacy (DP) is an increasingly popular tool for preserving individuals’ privacy by adding
-                statistical uncertainty when sharing sensitive data. DP has practical challenges that include the need
+            The 2022 USENIX Conference on Privacy Engineering Practice and Respect (PEPR '22) focuses on designing and
+            building products and systems that respect their users' privacy and the societies in which they operate.
+
+
+        </div>
+
+        <div class="para">
+            <h2>Differential Privacy</h2>
+            <div>
+                <h3>In Practice</h3>
+                Differential privacy (DP) is an increasingly popular tool for preserving individuals’ privacy by adding
+                statistical uncertainty when sharing sensitive data. However, DP has practical challenges that include
+                the need
                 for iterative exploration and negotiation with data custodians and analysts on the choice of privacy
-                parameters, DP variants, and data statistics.
+                parameters (e.g., epsilon and delta), DP variants (different algorithms/mechanisms e.g., Gaussian and
+                Laplacian mechanisms), and data statistics (e.g., mean, variance and sum).
             </div>
             <div class="para">
-                Furthermore, there is tension between data minimization and differential privacy: differential privacy
+                Further, there is tension between data minimization (limiting data collection) and differential privacy:
+                differential privacy
                 gives nearly accurate results on large datasets, however, collecting a large amount of data can infringe
                 the privacy of individuals and transgress regulations.
             </div>
             <div class="para">
+                <h3>Contextual Integrity</h3>
                 <a href="https://digifesto.com/2021/10/08/towards-a-synthesis-of-differential-privacy-and-contextual-integrity/"
                     target="blank">Contextual Integrity (CI)</a>, is another aspect that was introduced, to help with
                 these decisional choices
                 on applying DP. CI captures socially nuanced requirements of privacy. To capture such nuances, it comes
-                with a template for understanding information norms, parameterized in terms of the sender, receiver,
+                with a template for understanding information norms in social context (e.g., education and healthcare),
+                parameterized in terms of the sender, receiver,
                 data subject of the personal information, sensitive attributes of the data subject, and transmission
                 principle (the normative rule governing the conditions under which this parameterized information flow
                 is (in)appropriate).
             </div>
             <div class="para">
-                Furthermore, a large number of DP libraries have been developed and open-sourced with the primary goal
+                <h3>Libraries</h3>
+                A large number of DP libraries have been developed and open-sourced with the primary goal
                 of assisting non-experts in applying DP. However, there is a dearth of libraries focusing on
                 scalability. The two libraries introduced – <a href="https://gitlab.com/tumult-labs/core"
                     target="blank">Tumult’s
@@ -68,7 +84,7 @@
         </div>
 
         <div>
-            <h3>Gender Privacy</h3>
+            <h2>Gender Privacy</h2>
             <div>
                 Applications asking for users’ gender predominantly follow the norm of giving binary options.
                 Technologists must recognize the complexity and dynamic nature of gender, as well as the disclosure
@@ -80,13 +96,14 @@
         </div>
 
         <div>
-            <h3>Privacy in AI Chatbots</h3>
+            <h2>Privacy in AI Chatbots</h2>
             <div>
                 The disconcerting empirical findings revealed that chatbot users can reveal highly sensitive information
                 such as political opinions, sexual orientations, religious beliefs, and health data. Some promising
                 solutions for developers were presented to address the potential privacy harm to users. These included
                 identifying mental health and vulnerable populations, adjusting the interaction mode or interventions,
-                safeguarding inadvertent sharing of sensitive information, and avoiding manipulative/dark patterns.
+                safeguarding inadvertent sharing of sensitive information, and avoiding manipulative/dark patterns --
+                design techniques that nudge users to less privacy-protective options.
             </div>
             <div class="para">
                 <div class="quote">
@@ -100,12 +117,201 @@
                 </div>
             </div>
 
-            <!-- <div>
-                <h3>Differential Privacy</h3>
-                <div></div>
-                <div class="para"></div>
-                <div class="para"></div>
+            <div class="para">
+                <h2>Browser Privacy</h2>
+                <!-- <div class="para">
+                    <h3>DNS Blocking</h3>
+                    <div class="para"></div>
+                </div> -->
+                <div class="para">
+                    <h3>Content Blocking (a.k.a adblocking or tracker blocking)</h3>
+                    <div class="para">
+                        37% of the web uses ad blockers who values choice and control over their browsing experience.
+                        The usage of community-maintained pre-defined filter lists (collection of rules that describe
+                        what things to block on which websites, e.g., EasyList and EasyPrivacy) can result in
+                        functionality breaking across the web and can become obsolete. A innovative technique to
+                        sugarcoating, on the other hand, replaces the original tracking script with a privacy-preserving
+                        one.
+
+                        <div class="quote">
+                            SugarCoat: Programmatically generating privacy-preserving, web-compatible resource
+                            replacements for content blocking
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="para">
+                <h2>Smart Home Privacy</h2>
+                <div class="para">
+                    <h3>IoT Inspector</h3>
+                    <div class="para"></div>
+                </div>
+                <div class="para">
+                    <h3>Bystanders' Privacy</h3>
+                    <div class="para"></div>
+                </div>
             </div> -->
+
+            <div class="para">
+                <h2>Privacy Testbed</h2>
+                <div class="para">
+                    Privacy is simply too complicated to be left in the hands of average consumer (including
+                    developers). A remedy is to regulate the infrastructure that collects, stores, and transfers data.
+                    The proposed privacy testbed can analyze and understand the privacy behavior of client server
+                    applications in a network environment across a large number of hosts in a systematic manner.
+                    Using the testbed, developers can instantiate multiple virtual devices with various versions of
+                    operating systems to facilitate executing privacy-related analyses. What's more, regulators can
+                    utilize it for certification and verification, while consumers can validate application claims
+                    regarding their data practices
+
+                </div>
+            </div>
+
+            <!-- <div class="para">
+                <h2>Standardization</h2>
+                <div class="para">
+                </div>
+            </div> -->
+
+            <div>
+                <h2>Privacy By Design</h2>
+                <div>Privacy By Design states that privacy (including security) should be proactively incorporated into
+                    the software development lifecycle as opposed to being considered an afterthought.</div>
+                <div class="para">Successful incorporation of privacy by design can happen when developers consider
+                    privacy as a feature rather than a bottleneck and raise questions - “Wait! This doesn’t seem right!
+                    We need to discuss with the team.” (credit: an attendee's sharing). Another moralistic point of view
+                    to take
+                    into account is that, rather than emphasizing the business value of privacy (which is good to start
+                    with to incentivize the developers), organizations should instead focus on the human value,
+                    acknowledging that behind every piece of data is a human.
+                </div>
+                <div class="para">
+                    Some of the aspects of privacy by design covered in the talks are as below:
+                </div>
+                <div class="para">
+                    <h3>Right to Erasure/Export Request</h3>
+                    <div class="para">
+                        <div class="para">
+                            Users have the "right to know" (export request) about the personal information a business
+                            collects about them and the "right to delete" (erasure request) the personal information
+                            gathered from them, under the California Consumer Privacy Act of 2018.</div>
+
+                        <div class="para">
+                            The team at Lyft presented a strategically designed federated architecture to handle
+                            orchestrated data erasure and export requests and honor users’ rights. This thoughtful
+                            system
+                            development to comply with regulations and "shifting privacy to the left," as well as the
+                            involvement of stakeholders from privacy, security, engineering, product, infrastructure,
+                            and
+                            legal, exemplifies how privacy excellence can be brought horizontally across all lines of
+                            business company-wide by pulling together a cross-functional team.</div>
+
+                    </div>
+                </div>
+                <div class="para">
+                    <h3>Personal Data Annotation
+                    </h3>
+                    <div class="para">
+                        <div class="para">Personal data entering an organization can spread like wildfire throughout
+                            datasets and storage systems, rendering data lineage untraceable and potentially exposing an
+                            organization to privacy and security breaches. Therefore it’s paramount to annotate the data
+                            and help developers realize the sensitivity level of the data they are handling (among many
+                            other advantages). </div>
+                        <div class="para">The Twitter team came up with highly granular 504 labels for automated
+                            annotation of the columns of a dataset. Automation through machine learning supported the
+                            quality and velocity of data annotation. This approach also helped in data discovery
+                            (optimizing storage and discovering usage patterns) and data auditing and handling
+                            (detecting sensitivity of the accessed data and applying the necessary access control
+                            measures). </div>
+                    </div>
+                </div>
+                <div class="para">
+                    <h3>Product Deprecation</h3>
+                    <div class="para">
+                        <div class="para">Users expect the data to be deleted after a product or feature(s) is
+                            deprecated. And , organizations have a tendency to keep a product’s dead/unused data and
+                            code forever.
+                            Meta team addresses safe, rigorous, and automated deletion of data and code, leading to
+                            privacy win – data retention policy violation risk mitigation and supportng the privacy team
+                            by reduding the surface area of attack.
+                        </div>
+                        <div class="para">They presented two approachs for automated, multi-language, and scalable data
+                            and code deletion that combines the static usage measurements (code querying the data),
+                            runtime usage (traffic in production), and code-specific knowledge (including the business
+                            perspective). The code dependency across multiple languages is indexed using Glean, which
+                            preset static analysis of information in a readily accessible format. They also built a
+                            workflow management tool to help engineers deprecate a product or feature safely,
+                            efficiently, and completely. Building such internal tool not only helps in educating
+                            engineer but also in building trust. </div>
+                    </div>
+                </div>
+                <div class="para">
+                    <h3>Privacy Labels</h3>
+                    <div class="para">
+                        <div class="para">The onus is on the organizations to manage the security and privacy risk on
+                            behalf of their application users who come with a spectrum of technical knowledge. It is
+                            crucial to help the users in informed privacy decision-making with effective privacy labels
+                            in an application. These effective labels, supported by an interdisciplinary field, include
+                            – reducing information asymmetry, minimizing cognitive burden, addressing psychological
+                            bias, and personalizing expertise and preference. </div>
+                    </div>
+                </div>
+                <div class="para">
+                    <h3>Consent</h3>
+                    <div class="para">
+                        <h4>Cookie</h4>
+                        <div class="para">
+                            One of the biggest technological assumptions is that users understand the browser cookies,
+                            let alone make an informed cookie consent decision and the privacy harms. Moreover, cookie
+                            consent interfaces fail to comply with regulatory requirements and are often fraught with
+                            misleading labels, dark patterns and bad practices such as detailed paragraphs with limited
+                            options, burying the necessary options in links and positioning the banners where users can
+                            be ignorant.
+                        </div>
+                        <div class="para">
+                            A standardization of best practices for cookie consent interfaces is required, including
+                            (<a href="https://dl.acm.org/doi/10.1145/3491102.3501985" target="blank">based on user
+                                research</a>) simplifying rejecting all cookies and listing cookie categories in
+                            a user-friendly manner (most users misunderstand functional cookies as the necessary cookies
+                            for the website functioning, rather they are the tracking cookies). Finally, research is
+                            needed to develop creative solutions (that might require legal mandate) to automate cookie
+                            consent and lessen the burden on users.
+                        </div>
+
+                        <h4>Ethical Verbal Consent for Voice Assistants</h4>
+                        <div>
+                            Typically, voice assistants come with a companion app that collects user consent.
+                            Alternatively, having verbal-forward consent can organically integrate into conversation,
+                            although this strategy has drawbacks. They include a lack of information (key details may be
+                            missing), a lack of audible distinction (a subtle transition from skill to OS), a break in
+                            interface symmetry (the user may have to direct to a companion app to withdraw consent), and
+                            time pressure (bound on the response timing). Furthermore, consumers are often unable to
+                            distinguish between first- and third-party skills.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="para">
+                <h2>PEPR 2023</h2>
+                <div class="para">
+                    This year's conference covered a wide range of privacy topics. Following that, PEPR'23 can focus on
+                    practical difficulties and discoveries in various Privacy Enhancing Technologies (differential
+                    privacy was a hot topic this year), such as homomorphic encryption, federated analytics, secure
+                    multi-party computation, and so on.
+                    In addition, I am looking forward to the participation of organizations and academia from all around
+                    the world, not limited to Europe and the United States, because a global perspective on privacy is
+                    crucial.
+
+
+                </div>
+            </div>
+
+
+
 
             <!-- <div>
             <ol>
