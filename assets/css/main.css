@@ -352,6 +352,10 @@ template {
     margin: 1em 0;
 }
 
+.quote-para {
+    margin: 0.4em 0;
+}
+
 .para-pepr {
     margin: 1em 0;
     font-size: 1em;

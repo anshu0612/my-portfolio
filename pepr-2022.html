@@ -29,7 +29,7 @@
         <h1 class="heading">2022 USENIX Conference on Privacy Engineering Practice and Respect Key Takeways.
         </h1>
         <div style="margin-bottom: 1em; color: #39B7CD">Anshu Singh (DPPCC)</div>
-        <div style="margin-bottom: 1em; color: #39B7CD">Sep 11, 2022</div>
+        <div style="margin-bottom: 1em; color: #39B7CD">Sep 12, 2022</div>
 
         <div>
             <div class="para-pepr">
@@ -38,11 +38,17 @@
                 building products and systems that respect their users' privacy and the societies in which they operate.
             </div>
             <div class="para-pepr">
-                The conference was well-organized and was attended by a large number of privacy and security pundits.
-                Some of the privacy topics that were covered included differential privacy, privacy threat modeling,
-                consent management, effective privacy labelling and standardization, privacy incident management,
-                privacy in different areas (e.g., smart home devices, browsers, AI chatbots), privacy for vulnerable
-                groups (e.g., children and non-binary gender), privacy by design and so on.
+                The talks at PEPR'22 gave me encouragement that a new "privacy protection industry" is emerging, with
+                new privacy technologies being developed and discoveries being made to assist users in gaining more
+                control and transparency over their personal data. Such advancements
+                unquestionably reflect a step toward making privacy a "human-value-focused" need rather than a
+                "compliance-only" mandate.
+            </div>
+            <div class="para-pepr">
+                Some of the privacy topics that were covered in the conference included differential privacy, privacy
+                threat modeling, consent management, effective privacy labeling and standardization, privacy incident
+                management, privacy in different areas (e.g., smart home devices, browsers, AI chatbots), privacy for
+                vulnerable groups (e.g., children and non-binary gender), privacy by design and so on.
             </div>
 
             <div class="para-pepr">Here are my key takeaways from the conference.
@@ -76,7 +82,8 @@
             <div class="para-pepr">
                 <h3>Contextual Integrity</h3>
                 <a href="https://digifesto.com/2021/10/08/towards-a-synthesis-of-differential-privacy-and-contextual-integrity/"
-                    target="blank">Contextual Integrity (CI)</a> [1], is another aspect that was introduced, to help with
+                    target="blank">Contextual Integrity (CI)</a> [1], is another aspect that was introduced, to help
+                with
                 these decisional choices
                 on applying DP. CI captures socially nuanced requirements of privacy. To capture such nuances, it comes
                 with a template for understanding information norms in social context (e.g., education and healthcare),
@@ -224,7 +231,8 @@
                             awareness of data practices. To address this problem four <a
                                 href="https://dl.acm.org/doi/10.1145/3491102.3502137" target="blank">privacy awareness
                                 mechanisms were
-                                investigated</a> [9] to learn users’ and bystanders’ preferences. The mechanisms included
+                                investigated</a> [9] to learn users’ and bystanders’ preferences. The mechanisms
+                            included
                             privacy
                             dashboard, data app, ambient light (visual cues to signal network traffic, e.g., green light
                             for
@@ -420,7 +428,7 @@
                                 behalf of their application users who come with a spectrum of technical knowledge. It is
                                 crucial to help the users in informed privacy decision-making with effective privacy
                                 labels
-                                in an application. These effective labels, supported by an interdisciplinary field,
+                                in an application. These effective labels, supported by an multi-disciplinarity fields,
                                 include:
                                 <ol>
                                     <li><b>Reducing information asymmetry</b> (when buy can’t distinguish between high
@@ -430,7 +438,7 @@
                                             target="blank">Market of
                                             Lemons</a> [14]) – provide users with
                                         relevant information but can increase cognitive load, for example, lengthy (yet
-                                        informative) and high literacy requiring privacy policies </li>
+                                        didactic) and high literacy requiring privacy policies </li>
                                     <li><b>Minimizing cognitive burden</b> – instantly convey privacy offered by a
                                         product and
                                         enable quick comparisons between the products </li>
@@ -455,16 +463,143 @@
 
                         </div>
                     </div>
-
                 </div>
 
-                <!-- <div>
-                    <h2>Privacy Standarization</h2>
-                    <div class="para-pepr">
-                        ...
-                    </div>
-                </div> -->
 
+                <div>
+                    <h2>Data Privacy Vocablury</h2>
+                    <div class="para-pepr">
+                        Standardization in privacy is required (e.g., there is no consensus on the understanding of
+                        personal data, de-identification,
+                        and anonymization across jurisdictions) to facilitate personal data protection globally,
+                        including across jurisdictions (e.g., GDPR and CCPA), sectors, domains (e.g., banking,
+                        healthcare), and use cases.
+                    </div>
+                    <div class="para-pepr">
+                        The Data Privacy Vocabulary [15] is a step towards the required standardization (DPV). DPV is a
+                        base
+                        vocabulary and ontology for encapsulating the knowledge and semantics associated with personal
+                        data processing, entities involved and their roles, technology details, relationships to laws
+                        and legal justifications for its use, and other relevant concepts based on privacy and data
+                        protection. DPV can be used to frame privacy policies, access controls, use case documentation
+                        across sectors, internet communication, and so on, bringing commonality across areas and
+                        applications.
+                    </div>
+                    <div class="para-pepr">
+                        The difficulties in developing DPV include enormous disparities in worldwide privacy notions,
+                        integration of complex technologies (e.g., cookies), adoption obstacles, and so on.
+                        To refine the concepts, a multidisciplinary community effort is required.
+                    </div>
+                    <div class="quote">
+                        DPV is a more comprehensive version of the data privacy taxonomy provided by <a
+                            href="https://ethyca.github.io/fideslang/" target="blank">Fides Language</a> [16].
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Privacy Threat Modeling</h2>
+                    <div class="para-pepr">
+                        <!-- <div class="quote">
+                            <div>
+                                <h4>Primer for Privacy Threat Modelling</h4>
+                            </div>
+                            <div class="quote-para">
+                                <b>Solove's privacy taxonomy [17] </b>: Classification of privacy harms
+                                based on privacy harms caused due to
+                                information collection
+                                (surveillance and interrogation), information processing (aggregation, identification,
+                                insecurity, secondary use, and exclusion), invasions (intrusion and decisional
+                                interference),
+                                and information dissemination (breach of confidentiality, disclosure, exposure,
+                                increased
+                                accessibility, blackmail, appropriation, and distortion)
+                            </div>
+
+
+                            <div class="quote-para">
+                                <b>Privacy vulnerabilities</b>: Flaws that can be exploited to cause threat that causes
+                                privacy
+                                harms
+                            </div>
+                            <div class="quote-para">
+                                <b>Privacy consequences</b>: Harms that come to individuals on exploiting the
+                                vulnerabilities
+                            </div>
+                            <div class="quote-para">
+                                <b>Privacy threats</b>: Privacy actions and inactions that exploit privacy
+                                vulnerabilities
+                            </div>
+                            <div class="quote-para">
+                                <b>Privacy attacks</b>: Actions or inactions that cause perceived privacy harm (based on
+                                Solove's
+                                taxonomy [17]), that do not solely involve cybersecurity violations
+                            </div>
+                            <div class="quote-para">
+                                <b>LINDDUN [18]</b>: High-level privacy threat model that focuses on system flaws rather
+                                than
+                                the
+                                exploitation of those flaws. The privacy threat categories include Linkability,
+                                Identifiability,
+                                Non-repudiation, Detectability, Disclosure of Information, Unawareness, and
+                                Non-compliance.
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="para-pepr">
+                        <div class="para-pepr">
+                            While there are robust regulations on privacy compliance but no mandate on privacy risk
+                            management. Privacy risk mitigation can be addressed by making it privacy threat modeling
+                            informed (targeting most likely threats).
+                        </div>
+                        <div class="para-pepr">
+                            Using a
+                            dataset of 150 privacy attacks, the MITRE team designed two prototypes for privacy threat
+                            modeling (inspired by ubiquitous cybersecurity threat modeling) – privacy threat taxonomy
+                            (hierarchical), and privacy threat clusters (clustered). Both models break attacks into
+                            threat
+                            actions (e.g, insufficient de-identification, intrude, sniffing, and fingerprint). The two
+                            prototypes differ in that the privacy threat taxonomy further groups threat actions into
+                            domains
+                            of similar activities (e.g., identification, insecurity, aggregation, sharing, notice, and
+                            consent), while privacy threat clusters further group similar threat actions into
+                            overlapping
+                            threat clusters (e.g., physical monitoring, manipulation, deriving information and
+                            extortion).
+                            Privacy threat patterns are created by taking a privacy threat cluster and mapping it to the
+                            privacy threat taxonomy, and then assembling it in a linear kill-chain model (to identify
+                            possible attacks).
+                        </div>
+                        <div class="para-pepr">
+                            This approach can aid in modeling privacy risks as a function of privacy threats, privacy
+                            consequences, and privacy vulnerabilities, and help organizations in implementing the
+                            necessary
+                            risk mitigation efforts.</div>
+
+                    </div>
+                    <div class="para-pepr">
+                        <div class="quote">
+                            <div>
+                                <h4>Real-life Privacy Harms</h4>
+                            </div>
+                            <div class="quote-para"><b>Washington Health Identification</b> - The dataset containing
+                                demographic information was re-identified with a 43% success rate, by purchasing and
+                                linking it to an auxillary dataset, resulting in
+                                "identification"
+                                privacy harm.</div>
+                            <div class="quote-para"><b>Lenovo Superfish</b>: Lenonvo's preinstalled software intercepted
+                                a
+                                user's internet traffic for ad
+                                targeting with intrusive pop-ups, resulting in "intrusion" privacy harm.</div>
+                            <div class="quote-para"><b>Cambridge Analytics</b>: Data from a personality quiz was
+                                appropriated and used to target political
+                                ads, which amounted to decisional interference by manipulating user political decisions
+                                and
+                                producing chilling effects, resulting in "appropriation" and "decisional interference"
+                                privacy
+                                harms.</div>
+                        </div>
+                    </div>
+                </div>
 
                 <div>
                     <h2>What's next?</h2>
@@ -519,6 +654,10 @@
                         <li>Habib, Hana, et al. "“Okay, whatever”: An Evaluation of Cookie Consent Interfaces." CHI
                             Conference on Human Factors in Computing Systems. 2022.</li>
                         <li>https://en.wikipedia.org/wiki/The_Market_for_Lemons</li>
+                        <li>https://w3c.github.io/dpv/dpv/</li>
+                        <li>https://ethyca.github.io/fideslang/</li>
+                        <!-- <li>https://wiki.openrightsgroup.org/wiki/A_Taxonomy_of_Privacy</li>
+                        <li>https://www.linddun.org/</li> -->
                     </ol>
                 </div>
 
